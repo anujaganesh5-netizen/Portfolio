@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #0f172a;
+  background-color: #F0FDF4;
   color: #e5e7eb;
   line-height: 1.6;
 }
@@ -38,7 +38,7 @@ header {
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #38bdf8;
+  
 }
 
 .nav ul {
@@ -63,6 +63,7 @@ header {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  color:#022C22;
 }
 
 .hero h1 span {
@@ -72,7 +73,7 @@ header {
 .hero p {
   max-width: 600px;
   margin: 0 auto 30px;
-  color: #cbd5f5;
+  color:#065F46;;
 }
 
 .btn {
@@ -94,6 +95,7 @@ section {
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 50px;
+  color: #022C22;
 }
 
 .about {
@@ -101,12 +103,13 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  /* height:550px; */
-}
 
+}
+.about p{
+  color:#065F46;;
+}
 .about img {
   width: 50%;
-
   border-radius: 30px;
 }
 
@@ -157,7 +160,7 @@ section {
 
 .contact p {
   margin-bottom: 20px;
-  color: #cbd5f5;
+  color: #065F46;;
 }
 
 footer {
