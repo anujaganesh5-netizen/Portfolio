@@ -1,125 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="nav">
-        <div class="logo">SkillNest</div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">My Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Hello, I'm <span>AnujaGanesh</span></h1>
+    <p>
+      A motivated front-end developer constantly learning and improving to
+      build efficient, modern web solutions.
+    </p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <img src="./assets/me.jpeg" alt="profile" />
+    <p>
+      I am an 18-year-old passionate fresher web developer with a strong
+      interest in building clean, professional, and responsive websites.
+    </p>
+  </div>
+</section>
+
+<h2 class="section-title">My Skills</h2>
+
+<section id="skills">
+  <div class="skill-box">
+    <h3>Tech</h3>
+    <div class="skill-row"><span>HTML</span><div class="circle" data-percent="50"><span>50%</span></div></div>
+    <div class="skill-row"><span>CSS</span><div class="circle"data-percent="55"><span>55%</span></div></div>
+    <div class="skill-row"><span>JavaScript</span><div class="circle"data-percent="30"><span>30%</span></div></div>
+    <div class="skill-row"><span>Figma</span><div class="circle"data-percent="20"><span>20%</span></div></div>
+  </div>
+
+  <div class="skill-box">
+    <h3>Problem Solving</h3>
+    <div class="skill-row"><span>Problem Solving</span><div class="circle"data-percent="40"><span>40%</span></div></div>
+  </div>
+
+  <div class="skill-box">
+    <h3>English</h3>
+    <div class="skill-row"><span>Speaking</span><div class="circle"data-percent="46"><span>46%</span></div></div>
+    <div class="skill-row"><span>Writing</span><div class="circle"data-percent="49"><span>49%</span></div></div>
+    <div class="skill-row"><span>Reading</span><div class="circle"data-percent="49"><span>49%</span></div></div>
+    <div class="skill-row"><span>Listening</span><div class="circle"data-percent="30"><span>30%</span></div></div>
+  </div>
+</section>
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <h3 class="section-title">Technical Projects</h3>
+  <div class="projects">
+    <a class="project" href="https://anujaganesh5-netizen.github.io/Portfolio/">
+      <img src="./assets/Screenshot (322).png" />
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Modern responsive personal portfolio.</p>
       </div>
-    </header>
+    </a>
 
-    <section class="hero" id="home">
-      <div>
-        <h1>Hello, I'm <span>AnujaGanesh</span></h1>
-        <p>
-          A creative front-end developer who builds clean, modern, and
-          user‑friendly web experiences.
-        </p>
-        <a href="#projects" class="btn">View My Work</a>
+    <a class="project" href="https://anujaganesh5-netizen.github.io/static-webpage/">
+      <img src="./assets/Screenshot (321).png" />
+      <div class="project-content">
+        <h3>Static Website</h3>
+        <p>HTML & CSS static website.</p>
       </div>
-    </section>
+    </a>
+  </div>
+</section>
+<!-- LIFE SKILLS FULL WIDTH -->
+   <h3 class="section-title">Lifeskills Projects</h3>
+<section class="skill-box-ls">
+  <h2 class="skills-heading">Individual</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="./assets/Story_Telling.jpeg" />
+      <h4>Story Telling</h4>
+      <p>I wrote and presented my own story.</p>
+    </div>
+    <div class="skill-card">
+      <img src="./assets/Brand_Analysis.png" />
+      <h4>Brand Analysis</h4>
+      <p>Analyzed brands and created presentations.</p>
+    </div>
+  </div>
 
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about">
-        <p>
-          I am a passionate fresher web developer with a strong interest in
-          building clean, professional, and responsive websites. I have
-          completed my 12th standard and am currently studying at FSSA, where I
-          am gaining hands-on experience and improving my skills in modern web
-          development. I am eager to learn, grow, and contribute to real-world
-          projects.
-        </p>
-        <img src="./assets/me.jpeg" alt="profile" />
-      </div>
-    </section>
+  <h2 class="skills-heading">Team</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="./assets/Squad_Power.jpg" />
+      <h4>Squad Power</h4>
+      <p>First teamwork presentation experience.</p>
+    </div>
+    <div class="skill-card">
+      <img src="./assets/Product_build.jpg" />
+      <h4>Product Build</h4>
+      <p>Built and presented a problem-solving product.</p>
+    </div>
+    <div class="skill-card">
+      <img src="./assets/Workplace.png" />
+      <h4>Workplace</h4>
+      <p>Explained professional roles using PPT.</p>
+    </div>
+  </div>
+</section>
 
-    <section id="skills">
-      <h2 class="section-title">My Skills</h2>
-      <div class="skills">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Learning API</div>
-        <div class="skill-card">Python</div>
-      </div>
-    </section>
 
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <a href="https://anujaganesh5-netizen.github.io/Portfolio/">
-            <img src="./assets/Screenshot (322).png" />
-            <div class="project-content">
-              <h3>Portfolio Website</h3>
-              <p>Modern responsive personal portfolio website.</p>
-            </div></a
-          >
-        </div>
-        <div class="project">
-          <a href="https://anujaganesh5-netizen.github.io/static-webpage/">
-            <img src="./assets/Screenshot (321).png" />
-            <div class="project-content">
-              <h3>Static Website</h3>
-              <p>
-                A static replicate of the Poorvika website built using HTML and
-                CSS.
-              </p>
-            </div></a
-          >
-        </div>
-      </div>
-    </section>
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <p>Let’s work together and create something amazing.</p>
 
-    <section id="contact" class="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <p>Let’s work together and create something amazing.</p>
-      <p>
-        <i class="fa-solid fa-phone" style="color: #bf222a"></i>
-        <strong>Mobile:</strong> +91 9597103668
-      </p>
-      <p>
-        <i class="fa-brands fa-github"></i><strong>GitHub:</strong>
-        <a href="https://github.com/anujaganesh5-netizen" style="color: #38bdf8"
-          >github.com/Anuja</a
-        >
-      </p>
+  <p><i class="fa-solid fa-phone"></i> +91 9597103668</p>
+    <p><i class="fa-solid fa-at"></i> anujaganesh5@gmail.com</p>
+  <p><i class="fa-brands fa-github"></i> github.com/anujaganesh5-netizen</p>
+  <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/anuja-ganesh</p>
 
-      <p>
-        <i class="fa-brands fa-linkedin"></i> <strong>LinkedIn:</strong>
-        <a
-          href="https://www.linkedin.com/in/anuja-ganesh-1508a5374/"
-          style="color: #38bdf8"
-          >linkedin.com/in/Anuja</a
-        >
-      </p>
+</section>
 
-      <p>
-        <i class="fa-solid fa-at"></i>
-        <strong>Email:</strong>anujaganesh5@gmail.com
-      </p>
-    </section>
+<!-- <footer>© 2026 Anu | All Rights Reserved</footer> -->
+<script src="./javascript.js"></script>
 
-    <footer>© 2026 Anu | All Rights Reserved</footer>
-  </body>
+</body>
 </html>
