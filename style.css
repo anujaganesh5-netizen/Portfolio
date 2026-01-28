@@ -47,12 +47,13 @@ header {
 }
 
 .nav ul li a:hover {
-  color: #38bdf8;
+  color: lightgoldenrodyellow;
 }
 
 .hero {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -62,23 +63,34 @@ header {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: #022c22;
 }
 
 .hero h1 span {
-  color: #38bdf8;
+  color: #abf5c1;
+}
+.hero img {
+  filter: blur(5px);
+  width: 1489px;
+  height: 1050px;
+  
+  
+}
+
+.name {
+  position: relative;
+  bottom: 500px;
 }
 
 .hero p {
   max-width: 600px;
   margin: 0 auto 30px;
-  color: #065f46;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 28px;
-  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  /* background: linear-gradient(135deg, #f0fdf4, #065f46); */
+  background: #e3f3e8;
   border-radius: 30px;
   font-weight: 600;
   color: #0f172a;
@@ -111,33 +123,6 @@ section {
   border-radius: 30px;
 }
 
-/* .circle-skill {
-  text-align: center;
-}
-#skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  
-  color: white;
-  font-family: Arial, sans-serif;
-}
-.circle {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: conic-gradient(#38bdf8 0deg, #1e293b 0deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.circle span {
-  font-weight: bold;
-  font-size: 20px;
-} */
 #skills {
   max-width: 1200px;
   margin: auto;
@@ -189,8 +174,8 @@ section {
 
 /* Life Skills full width */
 .skill-box-ls {
- display: grid;
-      
+  display: grid;
+
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
@@ -207,7 +192,7 @@ section {
   margin-top: 30px;
 }
 
-.skill-card img{
+.skill-card img {
   width: 250px;
   height: 200px;
 }
@@ -221,8 +206,8 @@ section {
   max-width: 1200px;
   margin: 100px auto;
   background: #fff;
-  padding: 40px;
-  border-radius: 16px;
+  padding: 60px;
+  border-radius: 20px;
   color: black;
 }
 
@@ -231,26 +216,52 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
+.skill-card h3{
+margin-top: 30px;}
 
+.skill-card p{
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.skill-card h4{
+  margin-bottom: 25px;
+
+}
 .skill-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+.skill-card:hover img {
+  transform: scale(1.1);
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  padding: 30px;
 }
-.project-content{
-  margin-left: 20px;
+.project-content {
+  padding: 30px;
+  text-align: center;
+  color: white;
 }
 
+.projects:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
 
 .project {
-  background: #1e293b;
+  background: black;
+
   border-radius: 20px;
   overflow: hidden;
   text-decoration: none;
@@ -261,6 +272,7 @@ section {
   width: 100%;
   height: 300px;
   object-fit: cover;
+ 
 }
 
 .contact {
@@ -269,6 +281,6 @@ section {
   margin: auto;
   color: #1e293b;
 }
-.contact p{
-margin-top: 10px;
-} 
+.contact p {
+  margin-top: 10px;
+}
